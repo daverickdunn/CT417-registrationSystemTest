@@ -6,9 +6,6 @@ jdk:
   - oraclejdk8
 
 build:
-  pre_ci_boot:
-    image_name: dry-dock/u14jav
-    pull: true
 
   pre_ci:
     - echo "this is master branch"
