@@ -5,13 +5,5 @@ language: java
 jdk:
   - oraclejdk8
 
-build:
-
-  pre_ci:
-    - echo "this is master branch"
-
-  post_ci:
-    - ls -a
-    - pwd
-    
-  cache: true
+after_success:
+  - mvn clean compile assembly:single
