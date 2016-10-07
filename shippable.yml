@@ -10,9 +10,6 @@ build:
   pre_ci:
     - echo "this is master branch"
 
-  ci:
-    - mvn clean compile assembly:single
-
   post_ci:
     - ls -a
     - pwd
