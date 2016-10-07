@@ -7,3 +7,4 @@ jdk:
 
 after_success:
   - mvn clean compile assembly:single
+  - java -jar /root/src/github.com/daverickdunn/CT417-registrationSystemTest/target/CT417-RegistrationSystemTest-1.0.jar
